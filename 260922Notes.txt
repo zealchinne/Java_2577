@@ -1,0 +1,147 @@
+ Java 8 Features
+-------------------------
+
+concise code --- reduce the lines of code
+ enabling functional programming
+
+ 1. lambda expression
+2.  Functional interface
+3. defalut methods and static methods
+4. steam api 
+5.  Date and api 
+6. Nashorn javaScript Engine
+
+Lambda Expression :
+
+helps us to write our code in functional style.
+It provides a clear and concise way to implent SAM(Single Abstract Method ) interface:
+
+objective of Lambda expression is to bring benifits of the functional programing into java.
+
+ It is an anonymous function --->
+
+  ------> Name less 
+-------> without return type 
+------> without modifers --
+
+ex1:
+
+ public void m1() 
+{
+System.out.println("Hell Anudip");
+}
+
+() -> System.out.println("Hell Anudip");
+
+Ex2:
+
+public void m1(int a, int b) 
+{
+System.out.println(a+b);
+}
+
+(a,b) -> System.out.println(a+b); 
+
+public int squareIt(int n)
+	{
+		return n*n;
+	}
+
+	(int n) -> { return n*n; }
+	 
+    n -> n*n;
+
+public void m1(String s)
+{
+return s.length();
+}
+
+String s -> s.length(); 
+
+Why we use lambda expression
+
+ to provide  the implemention of Functional interface.
+less code
+
+Syntax:
+-----------
+ (argument_list) -> {body}
+
+arumnent list---> it can be empty or not
+arrow token --> it is used to lik agument list
+body ---->  it contains express or stament
+
+Functional interface that contains only one abstrat method is called functional interface.
+
+interface Sample
+{
+
+abstact m()
+{}
+static public void m1()
+{
+// stament
+}
+
+public void m1()
+{
+// stament
+}
+
+}
+
+Runnable  --> run();
+Compareble --> compateTo();
+CompareTo --> compare();
+Actionlisnter --> actionPerformed();
+Callable --> call();
+
+Lambda expression provides implementation of function interface.
+An interface which has only one SAM called functional interface.
+Java provides an anotation @Functionallnterface, which is used to decalare an interface as functional  interface
+
+wheather check valid or not 
+--------------------------------------------
+n -> return n*n;    ---> invalid ===> n -> n*n; 
+n ->{ return n*n;}  ---> valid
+n -> { return n*n;}; ---> valid
+n -> {n*n*n} ----------> valid
+
+
+() -> { // Stmet } --> no parameter 
+
+Lambda expression with inheritance concept
+
+getting the properties to other class 
+
+
+
+Activity of the day:
+--------------------------
+1. Write a Java program Lambda expression no parameter
+
+2. Write a Java program Lambda expression with multiple parameter
+
+3. Java Program Lambda expression forloop
+
+4. Java program Lambda expression multiple staments
+
+5. Java program Lambda expression Event Listener
+
+compile and push to your github repo................. 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
