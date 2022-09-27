@@ -1,0 +1,43 @@
+class TestSynchroniization 
+{
+	void printTable(int n) {
+		for(int i=1;i<=5;i++)
+		{
+			System.out.println(n*i);
+		}
+		try{
+			Thread.sleep(400);
+		}catch (Exception e) { System.out.println(e); }
+	}
+}
+class MyThread5 extends Thread {
+	TestSynchroniization t;
+	MyThread5(TestSynchroniization t) {
+		this.t=t;
+}
+public void run(){
+	t.printTable(5);
+}
+}
+
+class MyThread6 extends Thread {
+TestSynchroniization t;
+MyThread6(TestSynchroniization t) {
+	this.t=t;
+}
+public void run() {
+	t.printTable(100);
+}
+}
+
+class TestSynchronization1
+{
+	public static void main(String[] args) 
+	{
+		TestSynchroniization obj=new TestSynchroniization();
+		MyThread5 t1=new MyThread5(obj);
+		MyThread6 t2=new MyThread6(obj);
+		t1.start();
+		t2.start();
+	}
+}

@@ -1,0 +1,19 @@
+// Public Access modifier 
+class Logger {
+	public int debugLevel = 1;
+	public void debug(String logLine){
+System.out.println("Debug: "+logLine);
+}
+public void info(String logLine){
+	System.out.println("Info: "+logLine);
+	}
+}
+
+public class LoggerImp {
+public static void main( String[] args ) {
+	Logger logger = new Logger();
+logger.debug("debug level " + logger.debugLevel);
+logger.debugLevel = 6;
+logger.info("info at level" + logger.debugLevel);
+}
+}

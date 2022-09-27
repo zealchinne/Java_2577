@@ -1,0 +1,18 @@
+class Test1 
+{
+	static int data=50;
+    void method()  
+	    {    
+	        int n=90;//local variable    
+			System.out.println(n);
+	    }  
+
+	public static void main(String[] args) 
+	{
+		double d= 98.56;
+	System.out.println(data);
+	System.out.println(d);
+	Test1 t=new Test1();
+	t.method();
+	}
+}

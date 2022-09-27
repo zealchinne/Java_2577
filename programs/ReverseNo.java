@@ -1,0 +1,18 @@
+// Write Java Program for Reverse the Number
+import java.util.Scanner;
+class ReverseNo 
+{
+	public static void main(String[] args) 
+	{
+		Scanner s= new Scanner(System.in);
+		System.out.println("Enter the Value");
+		int n=s.nextInt();
+
+		while(n!=0)
+		{
+			int Rev = n%10;
+		System.out.print(Rev);
+		n=n/10;
+		}
+	}
+}

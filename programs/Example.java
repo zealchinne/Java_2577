@@ -1,0 +1,15 @@
+class Example 
+{
+	int a=100; //
+	public void read(){
+		int b=0;
+		b=this.a ;
+		System.out.println(b);
+	}
+	public static void main(String[] args) 
+	{
+		Example e=new Example();
+		System.out.println(e.a);
+		e.read();
+	}
+}

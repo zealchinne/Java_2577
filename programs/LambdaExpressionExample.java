@@ -1,0 +1,21 @@
+import java.util.function.*;
+interface Drawable
+{
+	public void draw();
+}
+
+class LambdaExpressionExample
+{
+public static void main(String[] args) 
+	{
+	int width =10;
+	Drawable d=new Drawable() {
+		public void draw() {
+		System.out.println("Drawing"+width);
+		}
+	};
+	d.draw();
+	Sayable s1=(name) -> { return "Hello"+name; };
+	System.out.println(s1.say("Sonoo"));
+		}
+}

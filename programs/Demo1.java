@@ -1,0 +1,17 @@
+import java.io.*;
+class Demo1 {
+public static void main(String args[])
+{
+FileInputStream fis = null;
+//* Constructor FileInputStream(File filename) throws FileNotFoundException (a checked exception)
+fis = new FileInputStream("C:/mydata.txt");
+int i;
+//* FileInputStream class read() method throws IOException (a checked exception)
+while(( i= fis.read() ) != -1)
+	{
+System.out.print((char)i);
+}
+//* close() closes the file input stream and throws IOException (a checked exception)
+fis.close();
+}
+}

@@ -1,0 +1,24 @@
+class B 
+{
+	int x=100; // variable declaration
+	public void read()//method declaration
+	{
+		System.out.println("method declare");
+	}
+	public static void main(String[] args) 
+	{
+		//B b=new B(); // creating object
+		//System.out.println(b.x);
+		//b.read();
+	}// main end
+}// class end
+
+class D extends B
+{
+	public static void main(String[] args) 
+	{
+		D d=new D();
+		System.out.println(d.x);
+		d.read();
+	}
+}

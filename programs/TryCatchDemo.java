@@ -1,0 +1,14 @@
+class TryCatchDemo 
+{
+	try{
+	static int division(int a, int b)
+	{
+		return a/b;
+	}
+	}catch(Exception e) { System.out.println("Division by 0 not possible"); }
+	public static void main(String[] args) 
+	{
+		int result=division(9,0);//--->
+		System.out.println(result);
+	}
+}

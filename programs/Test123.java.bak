@@ -1,0 +1,8 @@
+class Test123 
+{
+	public static void main(String[] args) 
+	{
+		enum Well {hey,hii,hello };
+		System.out.println("Hello World!");
+	}
+}

@@ -1,0 +1,18 @@
+class A 
+{
+	static double d1 = 12.3; // static variable 
+	void read() // method declaration
+		{
+		int i=28; // local variable
+		System.out.println(i);
+	}
+	public static void main(String[] args) 
+	{
+		char letterA = 'A' ; // instance variable
+		//System.out.println(f1);
+		System.out.println(d1);
+		System.out.println(letterA);
+		A a=new A();
+		a.read();
+	}
+}

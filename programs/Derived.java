@@ -1,0 +1,13 @@
+// Inheritance 
+class Base 
+{
+	private int a=50; // 
+}
+class Derived extends Base
+{
+	public static void main(String[] args) 
+	{
+		Derived d=new Derived();
+		System.out.println(d.a);
+	}
+}

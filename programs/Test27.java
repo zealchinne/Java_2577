@@ -1,0 +1,16 @@
+@FunctionalInterface
+interface Sayable
+{
+	void say(String msg);
+}
+class  Test27 implements Sayable
+{
+	public void say(String msg) {
+		System.out.println(msg);
+	}
+	public static void main(String[] args) 
+	{
+		Test27 t=new Test27();
+		t.say("Hello are there !");
+	}
+}

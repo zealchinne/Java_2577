@@ -1,0 +1,15 @@
+public class B 
+{
+	double x =1000; // variable declaration
+	 int read( int x)//method declaration
+	{
+		return 0;
+	}
+	public static void main(String[] args) 
+	{
+		B b=new B(); // creating object
+		System.out.println(b.x);
+		b.read(10);
+	}// main end
+}// class end
+

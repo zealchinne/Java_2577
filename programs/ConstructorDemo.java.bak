@@ -1,0 +1,12 @@
+class ConstructorDemo 
+{
+	ConstructorDemo() {
+		System.out.println("Default constructor");
+	}
+
+	public static void main(String[] args) 
+	{
+		ConstructorDemo c=new ConstructorDemo();
+		//System.out.println("Hello World!");
+	}
+}

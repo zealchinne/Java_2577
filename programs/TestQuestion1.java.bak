@@ -1,0 +1,19 @@
+class TestQuestion1 {
+
+String s1 = "overloading main Strng s[]";
+
+String s2 = "overloading main int s[]";
+
+public static void main(String args[]) {
+
+System.out.println("inside main 1");
+
+}
+
+public static void main(int args[]) {
+
+System.out.println("inside main 2");
+
+}
+
+}

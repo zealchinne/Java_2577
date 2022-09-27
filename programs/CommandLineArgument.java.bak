@@ -1,0 +1,16 @@
+import java.scanner.*;
+public class CommandLineArgument {
+public static void main(String args[]){
+int num1, num2, sum;
+if (args.length > 0) {
+try {
+num1 = Integer.parseInt(args[0]);
+num2 = Integer.parseInt(args[1]);
+sum=num1 + num2;
+System.out.println("Sum of inputted numbers:" +sum);
+} catch (NumberFormatException e) {
+System.err.println("Argument must be an integer.");
+}
+}
+}
+}

@@ -1,0 +1,13 @@
+//Var keyword usage
+class Test2 {
+	public static void main(String[] args) 
+	{
+		var d= 98.56;
+		var i=50;
+		 var s1="Anudip";
+
+	System.out.println(d);
+	System.out.println(i);
+	System.out.println(s1);
+	}
+}

@@ -1,0 +1,14 @@
+class Sample 
+{
+	
+	public static void main(String[] args) 
+	{
+		var i=10;
+		var d=90.45;
+		var s="Joju";
+		System.out.println(i);
+		System.out.println(d);
+		System.out.println(s);
+
+	}
+}

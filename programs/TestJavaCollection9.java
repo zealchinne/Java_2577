@@ -1,0 +1,16 @@
+import java.util.*; 
+ public class TestJavaCollection9{ 
+ public static void main(String args[]){ 
+ //Creating and adding elements 
+ TreeSet<Double> set=new TreeSet<Double>(); 
+ set.add(5.78); 
+ set.add(3.78); 
+ set.add(10.50); 
+ set.add(3.78); 
+ //traversing elements 
+Iterator<Double> itr=set.iterator(); 
+ while(itr.hasNext()){ 
+ System.out.println(itr.next()); 
+ }
+ }
+ }

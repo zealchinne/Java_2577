@@ -1,0 +1,8 @@
+import java.util.fuction.*;
+class Test15 
+{
+	public static void main(String[] args) 
+	{
+		() -> System.out.println("Hell Anudip");
+		}
+}

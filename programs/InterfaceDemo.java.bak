@@ -1,0 +1,20 @@
+// Interface implemetation
+import java.io.*;
+interface in1
+{
+	final int a=50;
+	void display();
+}
+class InterfaceDemo implements in1
+{
+	void display(){
+		System.out.println("It's a Interface Demo");
+	}
+	public static void main(String[] args) 
+	{
+		InterfaceDemo d=new InterfaceDemo();//
+		d.display();
+		System.out.println(a);
+	}
+}
+

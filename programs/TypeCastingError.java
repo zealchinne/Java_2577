@@ -1,0 +1,25 @@
+class TypeCastingError
+{
+	void show()
+	{
+		System.out.println("Hello world");
+	}
+	int get(int a){
+		return a;
+	}
+	public static void main(String[] args) 
+	{
+		TypeCastingError t=new TypeCastingError();
+		t.show();
+		TypeCastingError t1=new TypeCastingError();
+		t.show();
+		int y1=(Integer) t.get(12);
+		y1++;
+		System.out.println(y1);
+
+		double z1=(Double) t1.get(15);
+		z1++;
+		System.out.println(z1);
+
+	}
+}

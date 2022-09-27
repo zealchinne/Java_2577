@@ -1,0 +1,13 @@
+import java.util.*;
+public class JavaSortingDemo
+{
+public static void main(String[] args)
+{
+Integer[] numbers = new Integer[] { 18, 19, 13, 12, 15, 17, 16 };
+
+Arrays.sort(numbers); // Accending order
+System.out.println(Arrays.toString(numbers));
+Arrays.sort(numbers, Collections.reverseOrder());//Decending order
+System.out.println(Arrays.toString(numbers));
+}
+}
